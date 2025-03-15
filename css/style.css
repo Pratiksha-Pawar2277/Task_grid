@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: grid;
+    grid-template-areas: 'menubar'
+                         'title'
+                         'container'
+                         'footer';
+
+
+    background-color: rgb(255, 255, 255);
+    /* height:725px; */
+}
+
+.menubar{
+    grid-area: menubar;
+    display: grid;
+    background-color: rgb(48, 48, 48);
+    grid-template-columns:10fr 1fr 1fr 1fr 1fr;
+    height:60px;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 20px;
+
+}
+.item{
+    text-align: center;
+    width: 100px;
+    padding: 15px 0px 15px 0px;
+}
+
+.item:hover{
+    background-color:  rgb(79, 78, 78);;
+}
+
+.item a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.logo img{
+    height: 50px;
+    width:150px;
+    padding-left:30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title{
+    grid-area: title;
+    height: 60px;
+    padding-top: 10px ;
+    
+}
+.title h1{
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.container{
+
+padding-top:30PX;
+padding-bottom: 30px;
+
+grid-area: container;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card-container{
+    width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgba(214, 214, 214, 0.799);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+.card:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+.card img{
+    width:280px;
+    height: 250px;
+}
+
+
+.card-body {
+    padding: 2px 16px;
+  }
+.card-body h3{
+    font-size:20px;
+    font-weight: bolder;
+    color: rgb(50, 49, 49);
+}
+.card-body p{
+    text-align: justify;
+    color: rgb(57, 56, 56);
+}
+
+
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    height: 100px;
+    padding: 20px;
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 20px 20px 20px 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
